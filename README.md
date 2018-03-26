@@ -1,6 +1,8 @@
 # WifiBeacons
 这个demo是为了简单的获取周围蓝牙定位和wifi定位和基站定位所需要的基础数据
+可以获取基站信息,蓝牙信息,WIFI信息
 具体的调用方法如下:
+
 //为了避免每次都要传递context,在初始化是设置context
 
         SignalInit.init(getApplicationContext());
