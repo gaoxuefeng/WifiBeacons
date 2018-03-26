@@ -15,6 +15,7 @@ import com.mobile.signal.IBeaconRequest;
 import com.mobile.signal.SignalInit;
 import com.mobile.signal.beans.BeaconInfo;
 import com.mobile.signal.beans.MyPhoneInfo;
+import com.mobile.signal.beans.WifiSignalBean;
 import com.mobile.signal.utils.NetUtil;
 
 import java.util.List;
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             tvInfo.setText(e.getMessage());
         }
+        List<WifiSignalBean> wifiSignalBeanList = NetUtil.getWifiSignals();
     }
 
     @Override
