@@ -4,7 +4,7 @@
 //为了避免每次都要传递context,在初始化是设置context
  SignalInit.init(getApplicationContext());
  //具体的使用方法如以下调用
- try {
+        try {
             MyPhoneInfo myPhoneInfo = NetUtil.getPhoneInfo();
             tvInfo.setText(myPhoneInfo.toString());
             NetUtil.getBeacons(new IBeaconRequest() {
