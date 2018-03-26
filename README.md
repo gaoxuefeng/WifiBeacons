@@ -2,8 +2,11 @@
 这个demo是为了简单的获取周围蓝牙定位和wifi定位和基站定位所需要的基础数据
 具体的调用方法如下:
 //为了避免每次都要传递context,在初始化是设置context
- SignalInit.init(getApplicationContext());
+
+        SignalInit.init(getApplicationContext());
+
  //具体的使用方法如以下调用
+
         try {
             MyPhoneInfo myPhoneInfo = NetUtil.getPhoneInfo();
             tvInfo.setText(myPhoneInfo.toString());
@@ -13,7 +16,6 @@
                     tvInfo.append("\n\n" + beaconInfoList.toString());
                 }
             });
-
         } catch (Exception e) {
             e.printStackTrace();
             tvInfo.setText(e.getMessage());
